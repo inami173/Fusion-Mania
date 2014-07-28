@@ -1,1 +1,1 @@
-# FusionMania
+# FusionManiaサークル員・各ライブにおけるバンドの管理・登録サイト

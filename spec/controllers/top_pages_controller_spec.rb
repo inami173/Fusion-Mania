@@ -9,16 +9,9 @@ describe TopPagesController do
     end
   end
 
-  describe "GET 'about'" do
+  describe "GET 'contact'" do
     it "returns http success" do
-      get 'about'
-      response.should be_success
-    end
-  end
-
-  describe "GET 'help'" do
-    it "returns http success" do
-      get 'help'
+      get 'contact'
       response.should be_success
     end
   end

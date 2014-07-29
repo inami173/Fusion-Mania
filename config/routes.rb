@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
-  # root to: "top#index"
   root  'top_pages#home'
-
-  # get 'top_pages/home'
-
-  get 'top_pages/about'
-
-  get 'top_pages/help'
+  get 'top_pages/contact'
 
   resources :users
 

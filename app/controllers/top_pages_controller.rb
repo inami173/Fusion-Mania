@@ -2,9 +2,6 @@ class TopPagesController < ApplicationController
   def home
   end
 
-  def about
-  end
-
-  def help
+  def contact
   end
 end

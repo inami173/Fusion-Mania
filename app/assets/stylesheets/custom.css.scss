@@ -1,49 +1,23 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
-$White: #FFFFFF;
-$darkBrown: #615025;
-$lightBrown: #8f741e;
-$black: #0a0b0a;
-$deepYellow: #f6b813;
-
+$lightGray: #615025;
+ 
 body {
-  background-color: $White;
+  background-color: $lightGray; /*全体の背景を灰色*/
+  /*background-image: -webkit-linear-gradient(top, #E7E6E3 0%, #CFCCCA 100%);/*微妙にグラデーション*/*/
+  /*background-image: url("wallpaper-250097.jpg");*/
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: $darkBrown;
+  color: #615025; /*文字を濃い茶色*/
   margin: 0; padding: 0;
   font-family: Meiryo, sans-serif;
 }
 
 /* リンク */
-
-a{
-  text-decoration: none;
-  &:link { color: $darkBrown; }
-  &:visited { color: $lightBrown; }
-  &:hover { color: $black; }
-}
-
-// a:link { color: $darkBrown; }
-// a:visited { color: $lightBrown; }
-// a:hover { color: $black; }
+a:link { color: #615025; } /*濃い茶色*/
+a:visited { color: #8f741e; } /*訪れたところをちょっと薄い茶色*/
+a:hover { color: #0a0b0a; } /*ホバー時に濃い黒色に　(メニューバーは灰色に)*/
 a img { border: none; }
-
+a { text-decoration: none; } /*リンクの下線を消す*/
 
 /* ブロック要素 */
 p, h1, h2, h3, table, ul {
@@ -51,6 +25,9 @@ p, h1, h2, h3, table, ul {
 }
 
 /**************** 全体の枠 ****************/
+div#outerGroup{
+}
+
 div#container {
   margin: 0 auto;
   padding-top: 10px;
@@ -66,16 +43,16 @@ div#header {
 /**************** 各ページの見出し ****************/
 div#title {
   padding:5px 5px 10px 5px;
-  border-color: $deepYellow;
+  border-color:#f6b813;
   border-width:0 0 1px 7px;
   border-style:solid;
-  background: $White;
+  background:#FFFFFF;
 }
 
 /**************** メニューバー ****************/
 div.menubar {
   padding: 5px;
-  background-color: $black;
+  background-color: #0a0b0a; /*背景を黒*/
   color: #e7e6e3; 
   /*黄色。div.memubar spanがなければこれが現在のページのリンクの色になる。今はあるので境界線の色。これが無くてはbodyに書いてある全体の文字を決めるcolorの色になる*/
   font-size: 120%;
@@ -93,10 +70,10 @@ div.menubar span {
 }
 
 /* メニューバーのリンク（未訪問） */
-div.menubar a:link { color: $lightBrown; }
+div.menubar a:link { color: #8f741e; } /*薄い茶色*/
 
 /* メニューバーのリンク（訪問済） */
-div.menubar a:visited { color: $deepYellow; } /*濃い黄色*/
+div.menubar a:visited { color: #f6b813; } /*濃い黄色*/
 
 /* メニューバーのリンク（マウスを合わせたとき） */
 div.menubar a:hover {
@@ -109,9 +86,9 @@ div.menubar a:hover {
 div#footer {
   clear: both;
   font: 14px Verdana;
-  color: $darkBrown;
+  color: #615025;
   padding: 8px 0;
-  border-top: 4px solid $deepYellow;
+  border-top: 4px solid #f6b813;
   text-align: center;
 }
 
@@ -124,7 +101,7 @@ table.memberList, table.attr, table.liveList, table.bandList {
 
 table.memberList th, table.attr th, table.liveList th, table.bandList th { /*一番上の行*/
   background-color: #ba992f;
-  color: $darkBrown; /*行の文字色*/
+  color: #615025; /*行の文字色*/
   font-weight: normal;
 }
 
